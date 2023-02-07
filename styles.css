@@ -1,0 +1,182 @@
+body {
+  background-image: url(/img/fon2.jpeg);
+  height: 100vh;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+.todo {
+  background-color: none;
+  width: 40vw;
+}
+.todo-title {
+  align-items: center;
+}
+.todo-new {
+  display: flex;
+}
+.todo-new input {
+  padding: 15px;
+  font-size: 20px;
+  flex-grow: 1;
+}
+.todo-add {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 20px;
+  background-color: rgb(234, 118, 138);
+  font-size: 20px;
+}
+.todo-add:hover {
+  background: rgb(246, 218, 223);
+  color: black;
+  box-shadow: inset 0 0 0 3px rgb(246, 218, 223);
+}
+li {
+  border-radius: 4px;
+  list-style-type: none;
+  font-size: 25px;
+  margin-top: 12px;
+  background: rgb(239, 227, 222);
+  border: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+.todo-task {
+  margin-top: 20px;
+  display: flex;
+  outline: 2px solid pink;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-task:hover .todo_task-del {
+  display: block;
+}
+.todo-checkbox {
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.todo-task-title {
+  padding: 20px;
+  word-break: break-all;
+}
+.todo-task-del {
+  margin-left: auto;
+  background: rgb(42, 141, 191);
+  color: rgb(0, 0, 0);
+  width: 40px;
+  height: max-content;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0;
+  padding: 1rem;
+}
+.todo-task-del:hover {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  background: rgb(55, 153, 202);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0;
+  padding: 1rem;
+}
+.todo-add.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav-bar {
+  justify-content: space-around;
+  display: flex;
+  padding: 20px;
+}
+.nav-bar-btn {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 15px;
+}
+.special-nav-bar-btn {
+  background-color: #d2d2d3;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 15px;
+}
+.btn-del {
+  justify-content: space-around;
+  display: flex;
+}
+.btn-del-completed {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(34, 113, 152);
+  border: solid 2px black;
+  cursor: pointer;
+}
+.btn-del-completed:hover {
+  background-color: rgb(63, 154, 199);
+  color: white;
+}
+.btn-check {
+  justify-content: center;
+  display: flex;
+}
+.btn-check-all {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 15px;
+  background-color: pink;
+  border: solid 2px black;
+  cursor: pointer;
+}
+.btn-check-all:hover {
+  background-color: rgb(249, 208, 208);
+  color: white;
+}
+.number-page {
+  display: block;
+  padding: 10px;
+  justify-content: center;
+}
+.number-page-btn {
+  color: #ffffff;
+  background-color: rgb(234, 118, 138);
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 10px;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+.active-number-page-btn {
+  background-color: rgb(234, 118, 138);
+  color: black;
+  box-shadow: 0 0 26px 1 px rgb(234, 118, 138);
+  border: 1px solid rgb(234, 118, 138);
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 19px;
+  margin-left: 10px;
+}
+h3 {
+  color: white;
+  margin-right: 10px;
+}

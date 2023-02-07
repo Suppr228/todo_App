@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todo">
+      <div class="todo-content">
+        <h1 class="todo-title">TodoJS App</h1>
+        <div class="todo-new" id="todo-form">
+          <input type="text" placeholder="New Task" id="task-input" />
+          <button type="submit" class="todo-add" id="add-btn">add</button>
+        </div>
+        <ul id="todo-list"> </ul>
+      </div>
+      <div class="nav-bar">
+        <button class="special-nav-bar-btn" id="all">All tasks </button>
+        <button class="nav-bar-btn" id="progress">In progress </button>
+        <button class="nav-bar-btn" id="completed">Completed </button>
+      </div>
+      <div class="btn-check">
+        <h3>Check all</h3>
+        <input type="checkbox" class="btn-check-all" id="btn-check-all" />
+      </div>
+      <div class="btn-del">
+        <button class="btn-del-completed" id="btn-del-completed"
+          >Delete completed</button
+        >
+      </div>
+      <div class="number-page"> </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
